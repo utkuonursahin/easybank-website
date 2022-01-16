@@ -23,7 +23,7 @@
     @media only screen and (max-width: abs.$bp-largest){
       grid-row: 2 / 3;
       width: 100%;
-      padding: 0 0 5rem 0;
+      padding: 2.5rem 1rem;
       text-align: center;
       align-items: center;
     }
@@ -65,7 +65,9 @@
       object-fit: cover;
       @media only screen and (max-width: abs.$bp-largest){
         right: 0;
-
+        top: -50%;
+        height: 150%;
+        object-fit: contain;
       }
     }
   }

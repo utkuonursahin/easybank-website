@@ -21,6 +21,7 @@ $bp-largest:48em; //768px
   font-size: 5rem;
   font-weight: $font-thin;
   color: $color-primary-darkblue;
+  @media only screen and (max-width: $bp-largest){font-size: 4rem;}
 }
 
 .heading-2{
