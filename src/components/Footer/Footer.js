@@ -12,11 +12,11 @@ const Footer = () => {
             <path opacity=".15" d="M25.539 0L14.737 19.704h5.986L31.525 0z"/></g></g>
           </svg>
           <ul className="footer__logos--list">
-            <li className="footer__logos--list-social"><a href="#"><img src="./images/icon-facebook.svg" alt="Facebook icon"/></a></li>
-            <li className="footer__logos--list-social"><a href="#"><img src="./images/icon-youtube.svg" alt="Youtube icon"/></a></li>
-            <li className="footer__logos--list-social"><a href="#"><img src="./images/icon-twitter.svg" alt="Twitter icon"/></a></li>
-            <li className="footer__logos--list-social"><a href="#"><img src="./images/icon-pinterest.svg" alt="Pinterest icon"/></a></li>
-            <li className="footer__logos--list-social"><a href="#"><img src="./images/icon-instagram.svg" alt="Instagram icon"/></a></li>
+            <li className="footer__logos--list-social"><img src="./images/icon-facebook.svg" alt="Facebook icon"/></li>
+            <li className="footer__logos--list-social"><img src="./images/icon-youtube.svg" alt="Youtube icon"/></li>
+            <li className="footer__logos--list-social"><img src="./images/icon-twitter.svg" alt="Twitter icon"/></li>
+            <li className="footer__logos--list-social"><img src="./images/icon-pinterest.svg" alt="Pinterest icon"/></li>
+            <li className="footer__logos--list-social"><img src="./images/icon-instagram.svg" alt="Instagram icon"/></li>
           </ul>
         </div>
         <nav className="footer__nav">

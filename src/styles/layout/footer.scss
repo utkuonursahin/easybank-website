@@ -12,6 +12,7 @@
     grid-row-gap: 2.5rem;
   }
   &__logos{
+    cursor: pointer;
     justify-self: start;
     display: flex;
     flex-direction: column;
@@ -47,6 +48,7 @@
         font-weight: abs.$font-thin;
         white-space: nowrap;
         color: abs.$color-white;
+        &:hover{color: abs.$color-primary-green;}
       }
     }
   }

@@ -15,6 +15,7 @@
     grid-row-gap: 2.5rem;
     list-style: none;
     &--item{
+      cursor: pointer;
       display: grid;
       grid-template-rows: 50% repeat(3,min-content);
       gap: 1.5rem;
@@ -30,6 +31,7 @@
         color: abs.$color-grayishBlue;
         @media only screen and (max-width: abs.$bp-largest){font-size: 1.6rem;}
       }
+      &:hover h4{color: abs.$color-primary-green;}
       &-img{
         grid-row: 1 / 2;
         height: 100%;

@@ -53,6 +53,7 @@ $bp-largest:48em; //768px
   color: $color-white;
   font-weight: $font-bold;
   font-size: 1.6rem;
+  &:hover{opacity: .75;}
 }
 
 .description-1{
