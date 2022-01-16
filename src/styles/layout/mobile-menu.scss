@@ -1,0 +1,25 @@
+@use "../abstracts/abstract" as abs;
+.mobile-menu{
+  z-index: 2;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: calc(100% - 10rem);
+  margin: 2.5rem 5rem;
+  padding: 2rem 0;
+  background-color: abs.$color-white;
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem 3rem rgba(0, 2, 34,.1);
+  &__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    &--item{
+      font-size: 3rem;
+      color: abs.$color-primary-darkblue;
+      font-weight: abs.$font-thin;
+    }
+  }
+}

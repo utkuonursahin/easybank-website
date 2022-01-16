@@ -1,0 +1,31 @@
+@use "../abstracts/abstract" as abs;
+*,
+*::after,
+*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: abs.$font-primary;
+  font-weight: abs.$font-regular;
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: [header-start] min-content [header-end main-start] min-content  [main-end footer-start] min-content [footer-end];
+}
+
+.main{
+  display: grid;
+  grid-row: main-start / main-end;
+  grid-template-rows: [hero-start] 95vh [hero-end features-start] min-content [features-end articles-start] min-content [articles-end];
+}

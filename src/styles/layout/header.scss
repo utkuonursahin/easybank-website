@@ -1,0 +1,30 @@
+@use "../abstracts/abstract" as abs;
+.header{
+  position: relative;
+  grid-row: header-start / header-end;
+  padding: 2rem 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__list{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    @media only screen and (max-width: abs.$bp-largest){display: none}
+    &--item{
+      &-link{
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: abs.$color-grayishBlue;
+      }
+    }
+  }
+  & .cta{
+    @media only screen and (max-width: abs.$bp-largest){display: none}
+  }
+  &__logo{color: #2D314D;}
+  &__hamburger{
+    display: none;
+    @media only screen and (max-width: abs.$bp-largest){display: flex}
+  }
+}

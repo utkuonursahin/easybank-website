@@ -1,0 +1,74 @@
+//FONT VARIABLES
+$font-primary: 'Public Sans',sans-serif;
+$font-thin:300;
+$font-regular:400;
+$font-bold:700;
+//COLOR VARIABLES
+$color-primary-darkblue:hsl(233, 26%, 24%);
+$color-primary-green:hsl(136, 65%, 51%);
+$color-primary-brightCyan:hsl(192, 70%, 51%);
+
+$color-grayishBlue:hsl(233, 8%, 62%);
+$color-lightGrayishBlue:hsl(220, 16%, 96%);
+$color-lightGray:hsl(0, 0%, 98%);
+$color-white:hsl(0, 0%, 100%);
+
+//HEADERS
+.heading-1{
+  font-size: 5rem;
+  font-weight: $font-thin;
+  color: $color-primary-darkblue;
+}
+
+.heading-2{
+  font-size: 3.5rem;
+  font-weight: $font-thin;
+  color: $color-primary-darkblue;
+}
+
+.heading-3{
+  font-size: 2.5rem;
+  font-weight: $font-thin;
+  color: $color-primary-darkblue;
+}
+
+.heading-4{
+  font-size: 2rem;
+  font-weight: $font-thin;
+  color: $color-primary-darkblue;
+}
+
+//COMPONENTS
+.cta{
+  cursor: pointer;
+  width: min(20rem,50%);
+  height: 5rem;
+  border-radius: 5rem;
+  border: none;
+  background-image: linear-gradient(to right, rgba($color-primary-green,1), rgba($color-primary-brightCyan,1));
+  color: $color-white;
+  font-weight: $font-bold;
+  font-size: 1.6rem;
+}
+
+.description-1{
+  font-size: 2rem;
+  color: $color-grayishBlue;
+  line-height: 3rem;
+}
+
+.description-2{
+  font-size: 1.6rem;
+  color: $color-grayishBlue;
+  line-height: 2.8rem;
+}
+
+.description-3{
+  font-size: 1.3rem;
+  color: $color-grayishBlue;
+  line-height: 2.5rem;
+}
+
+//BREAKPOINTS
+$bp-largest:48em; //768px
+

@@ -1,0 +1,39 @@
+@use "../abstracts/abstract" as abs;
+.articles{
+  grid-row: articles-start / articles-end;
+  padding: 7.5rem 10vw;
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  align-items: start;
+  background-color: abs.$color-lightGray;
+  &__list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28.4rem,max-content));
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 2.5rem;
+    list-style: none;
+    &--item{
+      display: grid;
+      grid-template-rows: 50% repeat(3,min-content);
+      gap: 1.5rem;
+      background-color: abs.$color-white;
+      border-radius: 1rem;
+      & span{
+        font-size: 1.3rem;
+        color: abs.$color-grayishBlue;
+      }
+      &-img{
+        grid-row: 1 / 2;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+      }
+      & :not(&-img){
+        padding: 0 2rem;
+      }
+    }
+  }
+}
