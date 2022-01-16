@@ -65,8 +65,8 @@
       object-fit: cover;
       @media only screen and (max-width: abs.$bp-largest){
         right: 0;
-        top: -50%;
-        height: 150%;
+        top: -25%;
+        height: 125%;
         object-fit: contain;
       }
     }
