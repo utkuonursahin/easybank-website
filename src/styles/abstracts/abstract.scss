@@ -13,6 +13,9 @@ $color-lightGrayishBlue:hsl(220, 16%, 96%);
 $color-lightGray:hsl(0, 0%, 98%);
 $color-white:hsl(0, 0%, 100%);
 
+//BREAKPOINTS
+$bp-largest:48em; //768px
+
 //HEADERS
 .heading-1{
   font-size: 5rem;
@@ -55,20 +58,20 @@ $color-white:hsl(0, 0%, 100%);
   font-size: 2rem;
   color: $color-grayishBlue;
   line-height: 3rem;
+  @media only screen and (max-width: $bp-largest){font-size: 2.5rem;}
 }
 
 .description-2{
   font-size: 1.6rem;
   color: $color-grayishBlue;
   line-height: 2.8rem;
+  @media only screen and (max-width: $bp-largest){font-size: 2rem;}
 }
 
 .description-3{
   font-size: 1.3rem;
   color: $color-grayishBlue;
   line-height: 2.5rem;
+  @media only screen and (max-width: $bp-largest){font-size: 1.6rem;}
 }
-
-//BREAKPOINTS
-$bp-largest:48em; //768px
 

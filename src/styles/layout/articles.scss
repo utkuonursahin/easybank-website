@@ -20,9 +20,15 @@
       gap: 1.5rem;
       background-color: abs.$color-white;
       border-radius: 1rem;
+      box-shadow: 0 0 1rem .5rem rgba(34, 34, 34,.1);
+      @media only screen and (max-width: abs.$bp-largest){
+        grid-template-rows: 40% repeat(3,min-content);
+        gap: 1rem;
+      }
       & span{
         font-size: 1.3rem;
         color: abs.$color-grayishBlue;
+        @media only screen and (max-width: abs.$bp-largest){font-size: 1.6rem;}
       }
       &-img{
         grid-row: 1 / 2;

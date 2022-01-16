@@ -27,5 +27,5 @@ body{
 .main{
   display: grid;
   grid-row: main-start / main-end;
-  grid-template-rows: [hero-start] 95vh [hero-end features-start] min-content [features-end articles-start] min-content [articles-end];
+  grid-template-rows: [hero-start] 100vh [hero-end features-start] min-content [features-end articles-start] min-content [articles-end];
 }

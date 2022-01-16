@@ -9,6 +9,8 @@
   background-color: abs.$color-lightGrayishBlue;
   @media only screen and (max-width: abs.$bp-largest){
     margin-top: 0;
+    padding: 10rem 2rem;
+    text-align: center;
   }
   & .description-1{
     width: 60%;
@@ -20,11 +22,20 @@
     grid-column-gap: 2.5rem;
     grid-row-gap: 2.5rem;
     list-style: none;
+    @media only screen and (max-width: abs.$bp-largest){
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4,1fr);
+      justify-items: center;
+    }
     &--item{
       display: flex;
       flex-direction: column;
       gap: 2.5rem;
       align-items: start;
+      @media only screen and (max-width: abs.$bp-largest){
+        width: 75%;
+        align-items: center;
+      }
     }
   }
 }
